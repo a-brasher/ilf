@@ -1,0 +1,8 @@
+/** Stylesheet for CommpendiumLD SNap implementation. ***/
+/** Version 0.1, Andrew Brasher, 24.10.2014	**/
+
+/**	Default font for text (this is for Dialog pt size 12)	**/
+text	{font-family:sans-serif;font-size:1em;}	
+
+
+g.reference	image {cursor: pointer;}

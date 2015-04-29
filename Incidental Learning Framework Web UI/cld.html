@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Snap test</title>
+		<script src="./Snap.svg-0.2.0/dist/snap.svg.js"></script>
+		<link rel="stylesheet" href="http://compendiumld.open.ac.uk/svg/styles/styles-cld-svg.css" >
+	</head>
+	<body>
+		<script>
+			var s  = Snap();
+			var activityNodeIcon;
+			Snap.load("./CompendiumLD-core-learning-design-icon-definitions.svg", function (f) 	{
+			// Select via the id of the activitynode group
+			var activityNodeIcon  = f.select("#activitynode");
+			s.append(activityNodeIcon);
+			activityNodeIcon.drag();
+			});
+		
+				
+		
+			var bigCircle = s.circle(150,150, 100);
+			bigCircle.attr({fill: "#aabb22", stroke: "#000", strokeWidth: 5});
+			var smallCircle = s.circle(100, 150, 70);
+			var discs = s.group(smallCircle, s.circle(200, 150, 70));
+			discs.attr({fill: "#fff", stroke: "#000", strokeWidth: 2}); 
+			smallCircle.animate({r: 50}, 1200);
+			discs.drag();
+			s.text(200, 100, "Snap.svg");
+			// Provide an array of strings (or arrays), to generate tspans
+			var t = s.text(200, 120, ["Snap", ".", "svg"]);
+			t.selectAll("tspan:nth-child(3)").attr({
+			class: "nodelabel"
+			});
+			t.drag();
+			var activity = s.image("http://compendiumld.open.ac.uk/icons/vector/activity.svg", 200,200, 32,32);
+			var activityText = s.text(200, 232, "Activity title");
+			var activityGroup = s.group(activity, activityText);
+			// Declare it as a reference so cursor pointer style works on image element 
+			activityGroup.attr({class: "reference"});
+			activityGroup.drag();
+		</script>
+	
+	
+	</body>
+</html>

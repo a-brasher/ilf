@@ -1,0 +1,11 @@
+/** Stylesheet for Incidental Learning Framework  ***/
+/** Version 0.1, Andrew Brasher, 24.10.2014	**/
+
+/**	Default font for text (this is for Dialog pt size 12)	**/
+text	{font-family:sans-serif;font-size:1em;}	
+
+
+.place	{fill:#FFFFBF; stroke:none; stroke-width:0; } 
+.task	(fill:none; fill-opacity:0.0; stroke:#BFBFFF; stroke-width:100;  }	
+.tool	(fill:none; stroke:#BFDFBF; stroke-width:100;  }
+.socialsupport	(fill:none; stroke:white; stroke-width:100;  }

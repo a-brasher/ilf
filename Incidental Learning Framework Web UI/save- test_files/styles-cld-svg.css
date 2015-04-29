@@ -1,0 +1,98 @@
+/**	Default font for text (this is for Dialog pt size 12)	**/
+text	{font-family:sans-serif;font-size:1em;}	
+text.text14  {font-size:1.16666666666666em;}	
+text.text16  {font-size:1.3333333333333333333333333333333em;}
+text.text18  {font-size:1.5em;}	
+text.text20  {font-size:1.6666666666666666666666666666667em;}		
+text.text22  {font-size:1.8333333333333333333333333333333em;}	
+text.text24  {font-size:2.0em;}
+text.text26  {font-size:2.1666666666666666666666666666667em;}	
+text.text28  {font-size:2.3333333333333333333333333333333em;}
+text.Arial {font-family:Arial;}	
+g.indicator a {fill:#00f; text-decoration:underline}
+/**	Node indicators	**/
+.indicator {text-anchor:start; font-size:0.83em; font-weight: bold}
+g.time > text.indicator {text-anchor:start; font-size:0.83em; font-weight: bold; fill: rgb(0,128,128)}
+/** g.details  > text.indicator {font-weight: bold;}	**/
+g.transclusion > g.details > text.transclusionLinks {font-size:0.83em}
+g.transclusion > g.details > rect.border {fill: #eff; stroke: #888; fill-opacity:1.0}
+/** Set font size for the details indicator asterisk * **/
+g.details > text.indicator {font-size:1.5em}
+/**	The nodelabel class for text elements	**/
+text.nodelabel { text-anchor: middle;}
+
+/** The link class for line elements 	**/
+line.link { stroke:#000; stroke-width:1px;; stroke-opacity:1.0}
+/** Link label classes **/
+text.linklabel {  fill:black; text-anchor: middle;}
+rect.linklabelrect {fill:white; }
+
+line.fullscreenarrow { stroke:#000; stroke-width:2px;; stroke-opacity:1.0}
+
+g#ViewPane {}
+/******************************* Node type classes *******************************/
+/****** Learning design nodes ******/
+/****** Empty styles  are place holders *****/
+g.activity	{ }
+g.learnerOutput	{}
+g.learningOutcome	{ }
+g.resource	{}
+g.role	{}
+g.stop	{ }
+g.task	{ }
+g.tool	{ }
+g.mapnode use {cursor: pointer;}
+g.activitynode use {cursor: pointer;}
+g.listnode use {cursor: pointer;}
+use.mapTransclusion {cursor: pointer;}
+text.nodelabel {cursor:text}
+/****** Compendium nodes ******/
+/****** Empty styles are place holders *****/
+g.question	{ }
+g.answer	{ }
+g.map	{ }
+g.list 	{ }
+g.pro	{}
+g.con	{}
+g.reference	image {cursor: pointer;}
+g.resource  image[onclick] {cursor: pointer;}
+g.note	{}
+g.decision	{}
+g.argument	{}
+/****** Links ******/
+/**	General purpose link	**/
+g.link	{}
+/**	Task link; class="link task otherVals"	**/
+g.link.task	{}
+/**	Navigation pane styles	**/
+.navpanehomerect {fill:none; stroke:#8275FD; text-anchor:middle;}
+.navpaneborderrect {fill:none; stroke:#8275FD; stroke-width:0.2em; text-anchor:middle;}
+text.navPane {text-anchor:start;font-family:Dialog;font-size:1.8em }
+.NavPane {clip-path: url(#NavPaneClipPath);}
+g.navpaneviewitem {cursor: pointer;}
+g.navpaneviewitem > rect.viewitemrect {fill:none; stroke:silver}
+g.navpaneviewitem.selected > rect.viewitemrect {fill:yellow; stroke:silver}
+/**	Help pane styles	**/
+g.fullscreen  {cursor: pointer;}
+.helprect { stroke:#8275FD; text-anchor:middle;}
+.helptext {font-family:Dialog;font-size:2.2em;text-anchor:middle; }
+.sharetext {font-family:Dialog;font-size:1.9em;text-anchor:middle; cursor: pointer; }
+text.sharetext:hover{text-decoration:underline;}
+/** Embed code styles	**/
+body input {border-style:solid; border-color:black; border-width:0.2em; font-family:Dialog;}
+.embedinfo {font-family:Arial;font-size:1em;}
+/**	Colours for links **/
+g.link line.red 		{stroke:red;}
+g.link line.magenta	{stroke:magenta;}
+g.link line.green		{stroke:green;}
+g.link line.pink		{stroke:pink}
+g.link line.blue		{stroke:blue;}
+g.link line.orange	{stroke:orange;}
+g.link line.black 		{stroke:black;}
+g.link line.cyan		{stroke:cyan;}
+g.link line.gray		{stroke:gray;}
+g.link line.darkblue 	{stroke:darkblue;}
+g.link line.darkgreen	{stroke:darkgreen;}
+g.link line.greenyellow	{stroke:greenyellow;}
+g.link line.palegoldenrod	{stroke:palegoldenrod;}
+

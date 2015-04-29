@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Incidental Learning Framework - with Snap</title>
+		<script src="./Snap.svg-0.3.0/dist/snap.svg.js"></script>
+		<link rel="stylesheet" href="http://compendiumld.open.ac.uk/svg/styles/styles-cld-svg.css" >
+		<link rel="stylesheet" href="styles/ILF-styles.css" >
+	</head>
+	<!-- NOTE: CSS in HTML will affect SVG embedded in document!! IF CSS does nt seeem to work in component SVGs, try loading it in HTML -->
+	<body>
+		<script>
+			var s  = Snap();
+			var activityNodeIcon;
+			var  ilfBackground;
+			var cldIconPalette;
+		//	Snap.load("http://compendiumld.open.ac.uk/icons/vector/cld-learning-design-icons.svg", function (f) 	{
+			Snap.load("./icons+fragments/ILF-1.svg", function (f) 	{
+			// Select via the id of the activitynode group
+			var ilfBackground  = f.select("#ILF-background");
+			s.append(ilfBackground);
+			});
+			
+			Snap.load("./icons+fragments/cld-learning-design-icons.svg", function (f) 	{
+			// Select via the id of the activitynode group
+			var activityNodeIcon  = f.select("#activitynode");
+			s.append(activityNodeIcon);
+			activityNodeIcon.drag();
+			var toolIcon  = f.select("#tool");
+			s.append(toolIcon);
+			toolIcon.drag();
+			});
+		
+			Snap.load("./icons+fragments/ILF-tool-palette.svg", function (f) 	{
+			// Select via the id of the activitynode group
+			var cldIconPalette  = f.select("#ILF-Icon-Palette");
+			s.append(cldIconPalette);
+			
+			});
+		
+			
+		//	});
+			//t.drag();
+			//var activity = s.image("http://compendiumld.open.ac.uk/icons/vector/activity.svg", 200,200, 32,32);
+			//var activityText = s.text(200, 232, "Activity title");
+			//var activityGroup = s.group(activity, activityText);
+			// Declare it as a reference so cursor pointer style works on image element 
+			//activityGroup.attr({class: "reference"});
+			//activityGroup.drag();
+			
+		</script>
+	
+	
+	</body>
+</html>
